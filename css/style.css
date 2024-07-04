@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* text-align: center; */
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+:root{
+    --primary: black;
+    --secondary: white;
+    --mainboxshadow: 5v
+}
+
+/* .parent {
+    max-width: 70%;
+    padding: 20px;
+    /* width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+
+    border: 2px ;
+    grid-gap: 5px;
+
+  } */
+  
+.parent {
+    max-width: 1058px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 5px;
+}
+
+.button {
+    background-color: rgb(243, 243, 243);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+
+}
+
+.space{
+    grid-column: span 12;
+}
+
+.backspace{
+    grid-column: span 4;
+}
+
+.backslash{
+    grid-column: span 3;
+}
+
+.tab{
+    grid-column: span 3;
+}
+
+.capslock{
+    grid-column: span 4;
+}
+
+.shift{
+    grid-column: span 5;
+}
+
+
